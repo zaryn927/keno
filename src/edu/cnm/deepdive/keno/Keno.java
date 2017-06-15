@@ -20,6 +20,7 @@ public class Keno {
     catch (NumberFormatException ex){
       ex.printStackTrace();
       System.out.printf(USAGE_MESSAGE, Keno.class.getName());
+      System.exit(1);
     }
     catch (ArrayIndexOutOfBoundsException ex) {
       System.out.printf(USAGE_MESSAGE, Keno.class.getName());
@@ -27,6 +28,7 @@ public class Keno {
     catch(IllegalArgumentException ex) {
       ex.printStackTrace();
       System.out.printf(USAGE_MESSAGE, Keno.class.getName());
+      System.exit(1);
     }
 
   }
